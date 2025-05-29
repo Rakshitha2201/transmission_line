@@ -17,15 +17,16 @@ The successful operation of mmWave scanners hinges on the precise and efficient 
 
 # The Role of Waveguides:
 
-At mmWave frequencies, regular cables lose a lot of signal power. Waveguides, hollow metal tubes, send these high-frequency signals with minimal loss. A signal can only travel through a waveguide if its frequency ((f)) is above the cutoff frequency ((f<sub>c</sub>)) of the waveguide's mode. For a rectangular waveguide (width (a), height (b)), the cutoff frequency is:
+* At mmWave frequencies, regular cables lose a lot of signal power. Waveguides, hollow metal tubes, send these high-frequency signals with minimal loss. A signal can only travel through a waveguide if its frequency ((f)) is above the cutoff frequency ((f<sub>c</sub>)) of the waveguide's mode. For a rectangular waveguide (width (a), height (b)), the cutoff frequency is:\
+
 ![Screenshot 2025-05-29 150840](https://github.com/user-attachments/assets/27246285-b40b-4a35-92b3-8cb10cadce0b)
 
 where (c) is the speed of light, (\mu) and (\epsilon) are properties of the material inside, and (m, n) are mode numbers. For best performance, the operating frequency is usually between the lowest cutoff frequency and the next higher one.
-Waveguides control the way electromagnetic waves travel, ensuring the signal is directed correctly. The guide wavelength ((lambda_g)), the effective wavelength inside the waveguide, is:
+* Waveguides control the way electromagnetic waves travel, ensuring the signal is directed correctly. The guide wavelength ((lambda_g)), the effective wavelength inside the waveguide, is:
 ![Screenshot 2025-05-29 150845](https://github.com/user-attachments/assets/bcb14653-1fb7-4f73-9c46-5c657cc535e1)
 
 where (\lambda_0) is the wavelength in free space.
-Waveguides connect different parts of the scanner and have a characteristic impedance ((Z<sub>0 </sub>)) that depends on the mode. This impedance is important for efficient power transfer.
+* Waveguides connect different parts of the scanner and have a characteristic impedance ((Z<sub>0 </sub>)) that depends on the mode. This impedance is important for efficient power transfer.
 Waveguides can directly feed power to certain types of mmWave antennas.
 
 
@@ -34,26 +35,24 @@ Waveguides can directly feed power to certain types of mmWave antennas.
 
 While waveguides are great for sending high-power signals with low loss over longer distances inside the scanner, other types of specialized transmission lines are also used, especially to connect to the antenna arrays and for making the designs more compact:
 
-**Microstrip Lines**: These are flat conductors on a thin insulating material (substrate) with a ground plane. They are smaller and easier to integrate with the circuit boards used for the antennas and signal processing. However, they tend to lose more signal than waveguides at very high mmWave frequencies.
-**Striplines**: Similar to microstrip lines, but with a ground plane on both sides of the insulating material. This provides better shielding and less signal loss due to radiation compared to microstrip lines, but they are more complicated to manufacture.
-**Substrate Integrated Waveguide (SIW)**: This technology is a middle ground between traditional waveguides and flat transmission lines. SIW structures are made on an insulating material using rows of small metal-plated holes to act like the walls of a rectangular waveguide. They offer a good balance of performance, size, and how easy they are to integrate into systems for mmWave applications.
+* **Microstrip Lines**: These are flat conductors on a thin insulating material (substrate) with a ground plane. They are smaller and easier to integrate with the circuit boards used for the antennas and signal processing. However, they tend to lose more signal than waveguides at very high mmWave frequencies.
+* **Striplines**: Similar to microstrip lines, but with a ground plane on both sides of the insulating material. This provides better shielding and less signal loss due to radiation compared to microstrip lines, but they are more complicated to manufacture.
+* **Substrate Integrated Waveguide (SIW)**: This technology is a middle ground between traditional waveguides and flat transmission lines. SIW structures are made on an insulating material using rows of small metal-plated holes to act like the walls of a rectangular waveguide. They offer a good balance of performance, size, and how easy they are to integrate into systems for mmWave applications.
 
 # How They Fit Together in a Scanner:
 
-**In a typical mmWave scanner**:
-
-The mmWave signal is generated.
-Waveguides might carry this signal to a central point near the antenna arrays.
-From there, SIW or low-loss microstrip/stripline could be used to feed the signal to each individual antenna in the transmitting array.
-The receiving antenna array picks up the reflected signals, and these are then sent through similar flat transmission lines or waveguides to the electronics that process the signals and create the image.
+* **In a typical mmWave scanner**:The mmWave signal is generated.\
+* Waveguides might carry this signal to a central point near the antenna arrays.\
+* From there, SIW or low-loss microstrip/stripline could be used to feed the signal to each individual antenna in the transmitting array.  
+* The receiving antenna array picks up the reflected signals, and these are then sent through similar flat transmission lines or waveguides to the electronics that process the signals and create the image.
 
 # Why Waveguides and Specialized Transmission Lines are Important for mmWave Scanners:
 
-**Low Signal Loss**: This is crucial for keeping the signal strong and the scanner sensitive at very high frequencies, especially over the distances within the device.
-**Controlled Signal Path**: They ensure that the electromagnetic energy is directed accurately towards the person being scanned and that the reflected signals are captured correctly.
-**Reduced Interference**: The enclosed nature of waveguides helps prevent unwanted signals from leaking out and makes the system less susceptible to outside interference.
-**Efficient Power Delivery**: Important for generating enough signal strength to effectively detect hidden objects.
-**Integration with Antennas**: Specialized transmission lines like SIW and microstrip allow for compact and efficient connection to the large arrays of antennas needed for detailed imaging.
+**Low Signal Loss**: This is crucial for keeping the signal strong and the scanner sensitive at very high frequencies, especially over the distances within the device.\
+**Controlled Signal Path**: They ensure that the electromagnetic energy is directed accurately towards the person being scanned and that the reflected signals are captured correctly.\
+**Reduced Interference**: The enclosed nature of waveguides helps prevent unwanted signals from leaking out and makes the system less susceptible to outside interference.\
+**Efficient Power Delivery**: Important for generating enough signal strength to effectively detect hidden objects.\
+**Integration with Antennas**: Specialized transmission lines like SIW and microstrip allow for compact and efficient connection to the large arrays of antennas needed for detailed imaging.\
 
 # In Conclusion:
 
