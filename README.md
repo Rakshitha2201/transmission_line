@@ -1,5 +1,5 @@
-# transmission_line
-# Millimeter-Wave Scanners for Concealed Weapon Detection: A Deep Dive into Waveguides and Transmission Lines
+
+# Millimeter-Wave Scanners for Concealed Weapon Detection
 # Introduction
 Security screening has become an increasingly critical aspect of modern life, with a constant demand for more efficient and effective methods of detecting concealed threats. Millimeter-wave (mmWave) scanners represent a significant advancement in this field, offering the capability to non-invasively detect concealed objects, including metallic and non-metallic weapons, explosives, and contraband, hidden beneath clothing. These systems operate by emitting and analyzing the reflection of high-frequency electromagnetic waves in the millimeter-wave frequency range (typically 30 GHz to 300 GHz).
 
@@ -49,9 +49,7 @@ While waveguides are great for sending high-power signals with low loss over lon
 A typical scanner system strategically combines waveguides and planar transmission lines:  
 
 * **Signal Generation**: Waveguides might be used for initial signal routing and amplification.  
-* **Distribution Network**: A combination of waveguides and SIW or low-loss microstrip/stripline distributes the signal to antenna elements, with careful impedance matching ![Screenshot 2025-05-29 152353](https://github.com/user-attachments/assets/78dbd208-0c99-4ca5-81e9-a721ce2b23fb)
-
-at transitions.  
+* **Distribution Network**: A combination of waveguides and SIW or low-loss microstrip/stripline distributes the signal to antenna elements, with careful impedance matching ![Screenshot 2025-05-29 152353](https://github.com/user-attachments/assets/78dbd208-0c99-4ca5-81e9-a721ce2b23fb) at transitions.  
 * **Antenna Interface**: Planar lines often connect to individual antenna elements.  
 * **Receiver Front-End**: Low-loss lines (SIW or shielded planar lines) route weak received signals to amplifiers and mixers.  
 
