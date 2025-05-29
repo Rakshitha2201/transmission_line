@@ -9,20 +9,28 @@ The successful operation of mmWave scanners hinges on the precise and efficient 
 
 # How They Work:
 
-**Generating mmWaves**: The process starts with a device that produces millimeter-wave signals.
-**Sending the Signals**: These signals need to be directed efficiently to an array of antennas that will send them towards the person being scanned. This is where waveguides and special transmission lines are important.
-**Illuminating and Reflecting**: The antenna array transmits the mmWave signals towards the person. Different materials reflect these waves differently. Metal objects, like weapons, reflect them strongly compared to clothes and skin.
-**Receiving the Reflections**: Another set of antennas (or sometimes the same ones used for sending) picks up the reflected mmWave signals.
-**Processing and Imaging**: These received signals are then processed to create a picture showing how much each area reflected the waves. Areas with strong reflections indicate the likely presence of hidden metal objects.
+* **Generating mmWaves**: The process starts with a device that produces millimeter-wave signals.
+* **Sending the Signals**: These signals need to be directed efficiently to an array of antennas that will send them towards the person being scanned. This is where waveguides and special transmission lines are important.
+* **Illuminating and Reflecting**: The antenna array transmits the mmWave signals towards the person. Different materials reflect these waves differently. Metal objects, like weapons, reflect them strongly compared to clothes and skin.
+* **Receiving the Reflections**: Another set of antennas (or sometimes the same ones used for sending) picks up the reflected mmWave signals.
+* **Processing and Imaging**: These received signals are then processed to create a picture showing how much each area reflected the waves. Areas with strong reflections indicate the likely presence of hidden metal objects.
 
 # The Role of Waveguides:
 
-**Efficiently Sending High-Frequency Signals**: At millimeter-wave frequencies, regular cables like coaxial cables lose a lot of signal power. Waveguides, which are hollow metal tubes, provide a way to send these high-frequency signals with very little loss.
-**Controlling the Signal's Path**: Waveguides are designed to allow electromagnetic waves to travel in specific patterns called modes. This ensures the signal goes where it's supposed to without radiating out or causing interference. The size of the waveguide determines which modes are possible and the lowest frequency that can travel through it.
-**Connecting Parts**: Waveguides are used to connect different components inside the scanner, such as the source of the mmWaves, amplifiers, and the antenna arrays. Their solid structure and predictable electrical properties ensure the signal is transferred reliably.
-**Feeding Antennas**: Waveguides can be directly used as the part that feeds power to certain types of mmWave antennas, making sure the energy is transferred efficiently to the antenna so it can be transmitted.
+At mmWave frequencies, regular cables lose a lot of signal power. Waveguides, hollow metal tubes, send these high-frequency signals with minimal loss. A signal can only travel through a waveguide if its frequency ((f)) is above the cutoff frequency ((f<sub>c</sub>)) of the waveguide's mode. For a rectangular waveguide (width (a), height (b)), the cutoff frequency is:
+![Screenshot 2025-05-29 150840](https://github.com/user-attachments/assets/27246285-b40b-4a35-92b3-8cb10cadce0b)
 
-#The Role of Specialized Transmission Lines:
+where (c) is the speed of light, (\mu) and (\epsilon) are properties of the material inside, and (m, n) are mode numbers. For best performance, the operating frequency is usually between the lowest cutoff frequency and the next higher one.
+Waveguides control the way electromagnetic waves travel, ensuring the signal is directed correctly. The guide wavelength ((lambda_g)), the effective wavelength inside the waveguide, is:
+![Screenshot 2025-05-29 150845](https://github.com/user-attachments/assets/bcb14653-1fb7-4f73-9c46-5c657cc535e1)
+
+where (\lambda_0) is the wavelength in free space.
+Waveguides connect different parts of the scanner and have a characteristic impedance ((Z<sub>0 </sub>)) that depends on the mode. This impedance is important for efficient power transfer.
+Waveguides can directly feed power to certain types of mmWave antennas.
+
+
+
+# The Role of Specialized Transmission Lines:
 
 While waveguides are great for sending high-power signals with low loss over longer distances inside the scanner, other types of specialized transmission lines are also used, especially to connect to the antenna arrays and for making the designs more compact:
 
