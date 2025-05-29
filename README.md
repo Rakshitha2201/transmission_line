@@ -1,5 +1,5 @@
 
-# Millimeter-Wave Scanners for Concealed Weapon Detection
+# Millimeter-Wave Scanners for Concealed Weapon Detection-Leveraging Waveguides and Transmission Lines
 # Introduction
 Security screening has become an increasingly critical aspect of modern life, with a constant demand for more efficient and effective methods of detecting concealed threats. Millimeter-wave (mmWave) scanners represent a significant advancement in this field, offering the capability to non-invasively detect concealed objects, including metallic and non-metallic weapons, explosives, and contraband, hidden beneath clothing. These systems operate by emitting and analyzing the reflection of high-frequency electromagnetic waves in the millimeter-wave frequency range (typically 30 GHz to 300 GHz).
 
@@ -14,7 +14,7 @@ The successful operation of mmWave scanners hinges on the precise and efficient 
 * **Sending the Signals**: These signals need to be directed efficiently to an array of antennas that will send them towards the person being scanned. This is where waveguides and special transmission lines are important.
 * **Illuminating and Reflecting**: The antenna array transmits the mmWave signals towards the person. Different materials reflect these waves differently. Metal objects, like weapons, reflect them strongly compared to clothes and skin.
 * **Receiving the Reflections**: Another set of antennas (or sometimes the same ones used for sending) picks up the reflected mmWave signals.
-* **Processing and Imaging**: These received signals are then processed to create a picture showing how much each area reflected the waves. Areas with strong reflections indicate the likely presence of hidden metal objects.\
+* **Processing and Imaging**: These received signals are then processed to create a picture showing how much each area reflected the waves. Areas with strong reflections indicate the likely presence of hidden metal objects.  
   ![image](https://github.com/user-attachments/assets/522fec67-5bd1-40a9-8767-050181e9e5c8)
 
 
